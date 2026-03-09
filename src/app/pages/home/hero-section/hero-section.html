@@ -1,0 +1,119 @@
+<!-- Hero Container with Perspective for 3D elements -->
+<section #heroContainer
+    class="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-background-dark pt-20 perspective-[1000px]">
+
+    <!-- Deep Background Glows -->
+    <div class="absolute inset-0 z-0 flex justify-center items-center pointer-events-none">
+        <div
+            class="w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] rounded-full bg-primary/10 mix-blend-screen filter blur-[150px] animate-pulse">
+        </div>
+        <div class="absolute w-[60vw] h-[60vw] max-w-[600px] max-h-[600px] rounded-full bg-tertiary/10 mix-blend-screen filter blur-[120px] animate-pulse"
+            style="animation-delay: 2s;"></div>
+    </div>
+
+    <!-- Grid Pattern Overlay -->
+    <div
+        class="absolute inset-0 z-0 pointer-events-none bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[40px_40px] mask-[radial-gradient(ellipse_60%_60%_at_50%_50%,#000_10%,transparent_100%)]">
+    </div>
+
+    <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+        <!-- Left: Text Content -->
+        <div class="flex flex-col items-center lg:items-start text-center lg:text-left space-y-8 mt-10 md:mt-0">
+            <div #titleText class="space-y-4">
+                <h2
+                    class="text-tertiary font-bold tracking-widest uppercase text-sm md:text-base flex items-center gap-4 before:content-[''] before:w-12 before:h-px before:bg-tertiary after:content-[''] lg:after:w-0 after:h-px after:bg-tertiary after:w-12">
+                    SUTECH Engine
+                </h2>
+                <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-tight tracking-tight">
+                    The <span
+                        class="text-transparent bg-clip-text bg-linear-to-r from-primary to-secondary">Future</span> of
+                    <br />
+                    Applied Research.
+                </h1>
+            </div>
+
+            <p #subtitleText class="text-gray-400 text-lg md:text-xl max-w-lg leading-relaxed mix-blend-luminosity">
+                Join the 1st Applied Research Innovation & Industrial Forum. Bridge the gap between academia and
+                industry with real-world prototypes and breakthrough tech.
+            </p>
+
+            <div #ctaButton class="flex flex-col sm:flex-row gap-4 pt-4">
+                <a href="/submission"
+                    class="group relative px-8 py-4 rounded-full bg-linear-to-r from-primary to-tertiary text-white font-bold text-lg shadow-[0_0_20px_rgba(44,140,156,0.4)] hover:shadow-[0_0_30px_rgba(44,140,156,0.6)] transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                    <span class="relative z-10">Submit Project Now</span>
+                    <div
+                        class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0">
+                    </div>
+                </a>
+                <a href="#tracks"
+                    class="px-8 py-4 rounded-full border border-white/20 text-white font-bold text-lg hover:bg-white/5 hover:border-white/40 transition-all duration-300 backdrop-blur-sm">
+                    Explore Tracks
+                </a>
+            </div>
+        </div>
+
+        <!-- Right: 3D Animated Track Composition -->
+        <div class="relative h-[500px] w-full hidden lg:block transform-style-3d perspective-distant">
+
+            <!-- Track 1: Industrial Mechanics (Center/Back) -->
+            <div #track1
+                class="absolute top-[10%] p-6 left-[30%] w-64 h-64 bg-background-dark/80 backdrop-blur-xl border border-secondary/30 rounded-2xl shadow-[0_0_40px_rgba(204,104,75,0.2)] flex flex-col items-center justify-center transform-style-3d gap-4 group cursor-default">
+                <div
+                    class="w-20 h-20 rounded-full bg-linear-to-br from-secondary to-background-dark flex items-center justify-center border border-secondary/50 group-hover:scale-110 transition-transform duration-500 shadow-[inset_0_0_20px_rgba(255,255,255,0.2)] text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        viewBox="0 0 256 256">
+                        <path
+                            d="M128,88a40,40,0,1,0,40,40A40,40,0,0,0,128,88Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,152Zm120.3-39A7.8,7.8,0,0,0,240,105V72a8,8,0,0,0-8-8H199a7.8,7.8,0,0,0-7.73,8.3A120,120,0,0,0,248.3,113ZM240,80v15A104,104,0,0,1,200.75,80Zm-39.3,104V240a8,8,0,0,0,8,8h33a8,8,0,0,0,8-8V207A7.8,7.8,0,0,0,240,199.3,120,120,0,0,0,200.7,184ZM232,232H216.75V192.7A104,104,0,0,1,232,232Zm-175-48H16a8,8,0,0,0-8,8v33a8,8,0,0,0,8,8H49a7.8,7.8,0,0,0,7.73-8.3A120,120,0,0,0,57,184ZM16,240V225A104,104,0,0,1,55.25,240ZM57,72H16a8,8,0,0,0-8,8v33a7.8,7.8,0,0,0,8.3,7.73A120,120,0,0,0,57,72ZM24,80H39.25V119.3A104,104,0,0,1,24,80Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="text-center translate-z-10">
+                    <h3 class="text-secondary font-bold font-mono tracking-widest text-sm uppercase">Track 01</h3>
+                    <p class="text-white font-semibold flex flex-col leading-tight"><span
+                            class="text-xs text-gray-400">Industrial</span> Mechanics</p>
+                </div>
+            </div>
+
+            <!-- Track 2: Creative Tech (Front/Left) -->
+            <div #track2
+                class="absolute top-[35%] left-[5%] w-72 h-48 bg-background-dark/80 backdrop-blur-xl border border-primary/30 rounded-2xl shadow-[0_0_50px_rgba(44,140,156,0.3)] flex items-center p-6 transform-style-3d gap-6 group cursor-default z-20">
+                <div
+                    class="w-16 h-16 rounded-xl bg-linear-to-br from-primary to-background-dark flex items-center justify-center border border-primary/50 group-hover:-rotate-12 transition-transform duration-500 shadow-[inset_0_0_20px_rgba(255,255,255,0.2)] text-white shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        viewBox="0 0 256 256">
+                        <path
+                            d="M211.9,158.4l-36-65.4h0a7.9,7.9,0,0,0-7-4.1H133.2L116.5,43a16,16,0,0,0-28.7,0L71.1,73.1a24.1,24.1,0,0,1,10.6,9.5L122,156.6h0a40,40,0,0,0,69.9,1.8ZM93.4,54.7,106.8,82H81.2ZM177.3,152a24,24,0,0,1-41.5,0L99.6,85.5A7.8,7.8,0,0,0,94,82H118l36.2,65.4A7.4,7.4,0,0,0,161,152a7.8,7.8,0,0,0,7.1-4.2L182.2,122Zm65.8,17.7-18.7-27.4A8,8,0,1,0,211.2,151l11.4,16.8L112.5,225.5v0a24,24,0,0,1-32.9-6.3L61.7,192.5H48a8,8,0,0,0,0,16H66.1a39.9,39.9,0,0,0,55,10.5l112.4-58.9A8.1,8.1,0,0,0,243.1,169.7ZM48,168H24a8,8,0,0,1,0-16H48a8,8,0,0,1,0,16Zm16-32H24a8,8,0,0,1,0-16H64a8,8,0,0,1,0,16Zm24-32H24a8,8,0,0,1,0-16H88a8,8,0,0,1,0,16Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="translate-z-20">
+                    <h3 class="text-primary font-bold font-mono tracking-widest text-sm uppercase">Track 03</h3>
+                    <p class="text-white font-semibold text-lg leading-tight">Creative Tech <br /><span
+                            class="text-sm font-normal text-gray-400">Digital Innovation</span></p>
+                </div>
+            </div>
+
+            <!-- Track 3: Renewable Energy (Front/Right) -->
+            <div #track3
+                class="absolute top-[45%] right-0 w-64 h-56 bg-background-dark/80 backdrop-blur-xl border border-tertiary/30 rounded-2xl shadow-[0_0_40px_rgba(83,38,108,0.3)] flex flex-col items-start justify-center p-6 transform-style-3d gap-4 group cursor-default z-10">
+                <div
+                    class="w-14 h-14 rounded-full bg-linear-to-br from-tertiary to-background-dark flex items-center justify-center border border-tertiary/50 group-hover:rotate-45 transition-transform duration-500 shadow-[inset_0_0_20px_rgba(255,255,255,0.2)] text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        viewBox="0 0 256 256">
+                        <path
+                            d="M141.6,227.6A8,8,0,0,1,136,232H120a8,8,0,0,1-7.6-5.5L88.9,152.1,33.5,130A8,8,0,0,1,32,114.7L189.9,20.4a8,8,0,0,1,10.3,12L53.7,121l52,20.8a8.1,8.1,0,0,1,4.9,4.9l80.5,214.7,2.2,5.9a8,8,0,0,1-4.7,10.4,8,8,0,0,1-7-1.1Zm80-60a8,8,0,0,0-11,3.4L208,176H176a8,8,0,0,0,0,16h32l2.6,5.1a8,8,0,0,0,10.8,3.4A8.1,8.1,0,0,0,225,189.6L222,184H240a8,8,0,0,0,0-16H222Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="translate-z-20">
+                    <h3 class="text-tertiary font-bold font-mono tracking-widest text-sm uppercase">Track 02</h3>
+                    <p class="text-white font-semibold text-xl leading-tight">Renewable <span
+                            class="block text-gray-400 text-sm font-normal">Energy Systems</span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
