@@ -1,1 +1,146 @@
-<p>why-join-section works!</p>
+<section class="py-24 bg-background-dark relative overflow-hidden">
+    <!-- Ambient Accents -->
+    <div
+        class="absolute top-0 right-0 w-[40vw] h-[40vw] bg-primary/10 rounded-full blur-[150px] mix-blend-screen pointer-events-none">
+    </div>
+    <div
+        class="absolute bottom-0 left-0 w-[40vw] h-[40vw] bg-tertiary/10 rounded-full blur-[150px] mix-blend-screen pointer-events-none">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Header -->
+        <div #headerSection class="text-center mb-20 space-y-4">
+            <h3 class="text-primary font-bold tracking-widest uppercase text-sm md:text-base">Value Proposition</h3>
+            <h2 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight">
+                Why Join <span
+                    class="bg-clip-text text-transparent bg-linear-to-r from-primary via-secondary to-tertiary drop-shadow-lg">ARIIF?</span>
+            </h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto font-light">More than just a competition. It is a
+                launchpad for your career.</p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            <!-- Card 1: Recognition & Rewards -->
+            <div #featureCard
+                class="group relative bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md hover:-translate-y-2 hover:border-primary/50 transition-all duration-500 overflow-hidden shadow-xl flex flex-col">
+                <div
+                    class="absolute top-[-20%] right-[-20%] w-48 h-48 bg-primary/20 rounded-full blur-[60px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                </div>
+
+                <div
+                    class="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center text-primary mb-6 border border-primary/30 shadow-[0_0_15px_rgba(44,140,156,0.3)]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        viewBox="0 0 256 256">
+                        <path
+                            d="M176,16H80A24,24,0,0,0,56,40V56H40A24,24,0,0,0,16,80v8a48,48,0,0,0,48,48H72.29a47.88,47.88,0,0,0,16.51,28c-15.65,11-24.8,25.85-24.8,40v16a8,8,0,0,0,8,8H184a8,8,0,0,0,8-8V204c0-14.15-9.15-29-24.8-40a47.88,47.88,0,0,0,16.51-28H192a48,48,0,0,0,48-48V80A24,24,0,0,0,216,56H200V40A24,24,0,0,0,176,16ZM64,120A32,32,0,0,1,32,88V80A8,8,0,0,1,40,72H56V96a47.66,47.66,0,0,0,.79,8.51c-4.43.2-8.52.28-11.41.34A15.3,15.3,0,0,1,44.75,104a11,11,0,0,1-.52-1.93Zm45.69,8H146.31a31.78,31.78,0,0,1-36.62,0ZM176,212H80V204c0-13,11.39-24.61,28.24-33.15a8,8,0,0,0-7.2-14.28C84.38,165,72,179,72,194.27v1h-8a8,8,0,0,0-8-8v-8a48.06,48.06,0,0,0,48-48V80A8,8,0,0,0,96,72H72V56A8,8,0,0,1,80,48h96a8,8,0,0,1,8,8V120H152a8,8,0,0,0,0,16h32v4a8,8,0,0,0,8,8h8v-1c0-15.22-12.38-29.23-29-37.7a8,8,0,0,0-7.2,14.28C180.61,179.39,192,191,192,204v8ZM224,88a32,32,0,0,1-32,32H192V72h16A8,8,0,0,1,216,80v8ZM128,88a16,16,0,1,1,16-16A16,16,0,0,1,128,88Z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">Recognition & Rewards</h3>
+                <p class="text-gray-400 font-light mb-6 text-sm md:text-base">We celebrate innovation with more than
+                    just applause. Top-performing teams will receive:</p>
+                <ul class="space-y-4 flex-1">
+                    <li class="flex items-start text-gray-300">
+                        <span class="text-primary mr-3 text-lg leading-tight">&bull;</span>
+                        <span class="text-sm"><strong class="text-white">Cash Prizes:</strong> Significant financial
+                            rewards to support further development.</span>
+                    </li>
+                    <li class="flex items-start text-gray-300">
+                        <span class="text-primary mr-3 text-lg leading-tight">&bull;</span>
+                        <span class="text-sm"><strong class="text-white">Honorary Trophies:</strong> Symbolic
+                            recognition of excellence.</span>
+                    </li>
+                    <li class="flex items-start text-gray-300">
+                        <span class="text-primary mr-3 text-lg leading-tight">&bull;</span>
+                        <span class="text-sm"><strong class="text-white">Certificates:</strong> Official credentials to
+                            bolster your CV.</span>
+                    </li>
+                    <li class="flex items-start text-gray-300">
+                        <span class="text-primary mr-3 text-lg leading-tight">&bull;</span>
+                        <span class="text-sm"><strong class="text-white">Incubation:</strong> Pathways to turn your
+                            prototype into a startup.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Card 2: The Grand Stage (Offset for visual interest) -->
+            <div #featureCard
+                class="group relative bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md hover:-translate-y-2 hover:border-secondary/50 transition-all duration-500 overflow-hidden shadow-xl flex flex-col translate-y-0 lg:translate-y-8">
+                <div
+                    class="absolute top-[-20%] right-[-20%] w-48 h-48 bg-secondary/20 rounded-full blur-[60px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                </div>
+
+                <div
+                    class="w-16 h-16 rounded-2xl bg-secondary/20 flex items-center justify-center text-secondary mb-6 border border-secondary/30 shadow-[0_0_15px_rgba(204,104,75,0.3)]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        viewBox="0 0 256 256">
+                        <path
+                            d="M246.74,58.85l-49.52-49.5a16,16,0,0,0-22.62,0L135,48.91l-60.1-6.68a16,16,0,0,0-15.15,6.07l-35.35,48.6A8,8,0,0,0,25.68,107l8.84,6.43-15.93,15.93A16,16,0,0,0,23.28,152l65.88,65.88a16,16,0,0,0,22.62,0l83.65-83.64A8,8,0,0,0,192,120V94l32.14-32A16,16,0,0,0,246.74,58.85Zm-11.31,11.31-29.35,29.35,16.59-19A8,8,0,0,0,223,70.52L204.79,52.27A8,8,0,0,0,194,52ZM80.6,183.4,72.23,175,99.85,147.4a8,8,0,0,0-11.31-11.31l-27.62,27.61-8.38-8.38L80.17,127.7l19.24,19.24a8,8,0,0,0,11.31-11.31L91.48,116.39l28.82-28.83L135,102.3a8,8,0,0,0,11.31-11.31l-14.7-14.71L156.46,51.48l36.52,36.52a8,8,0,0,0,2.6,4.64l48.65,35.39L184,188.24h0l-71.69,71.68Zm125.84-21.84a8,8,0,0,0-7.79-13.88l-65.88,37.06a8,8,0,0,0,7.79,13.88Z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">The Grand Stage</h3>
+                <p class="text-gray-400 font-light mb-6 text-sm md:text-base">The culmination takes place right here at
+                    the SUTECH Campus. This is your moment to:</p>
+                <ul class="space-y-4 flex-1">
+                    <li class="flex items-start text-gray-300">
+                        <span class="text-secondary mr-3 text-lg leading-tight">&bull;</span>
+                        <span class="text-sm"><strong class="text-white">Live Showcase:</strong> Present your prototypes
+                            in a professional exhibition setting.</span>
+                    </li>
+                    <li class="flex items-start text-gray-300">
+                        <span class="text-secondary mr-3 text-lg leading-tight">&bull;</span>
+                        <span class="text-sm"><strong class="text-white">Expert Jury Review:</strong> Defend your work
+                            in front of industry leaders and professors.</span>
+                    </li>
+                    <li class="flex items-start text-gray-300">
+                        <span class="text-secondary mr-3 text-lg leading-tight">&bull;</span>
+                        <span class="text-sm"><strong class="text-white">High-Level Networking:</strong> Connect
+                            directly with potential employers and mentors.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Card 3: Updated Professional Power-Skills -->
+            <div #featureCard
+                class="group relative bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md hover:-translate-y-2 hover:border-tertiary/50 transition-all duration-500 overflow-hidden shadow-xl flex flex-col">
+                <div
+                    class="absolute top-[-20%] right-[-20%] w-48 h-48 bg-tertiary/20 rounded-full blur-[60px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                </div>
+
+                <div
+                    class="w-16 h-16 rounded-2xl bg-tertiary/20 flex items-center justify-center text-tertiary mb-6 border border-tertiary/30 shadow-[0_0_15px_rgba(83,38,108,0.3)]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        viewBox="0 0 256 256">
+                        <path
+                            d="M128,144a48,48,0,1,0-48-48A48.05,48.05,0,0,0,128,144ZM128,64a32,32,0,1,1-32,32A32,32,0,0,1,128,64ZM82.49,173.35,103,152.88A8,8,0,0,0,91.7,141.56L61,172.29a24.11,24.11,0,0,0-6.85,27H32a8,8,0,0,1,0-16H40a16,16,0,0,0,16-16,8,8,0,0,0-16,0A16,16,0,0,0,24,184H16a8,8,0,0,0,0,16H24a24,24,0,0,0,24,24H72a8,8,0,0,0,7.18-4.47Z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">Professional Power-Skills</h3>
+                <p class="text-gray-400 font-light mb-6 text-sm md:text-base">An intensive lab for the essential skills
+                    that define a modern engineer:</p>
+                <ul class="space-y-4 flex-1">
+                    <li class="flex items-start text-gray-300">
+                        <span class="text-tertiary mr-3 text-lg leading-tight">&bull;</span>
+                        <span class="text-sm"><strong class="text-white">Leadership & Teamwork:</strong> Navigate group
+                            dynamics and lead projects.</span>
+                    </li>
+                    <li class="flex items-start text-gray-300">
+                        <span class="text-tertiary mr-3 text-lg leading-tight">&bull;</span>
+                        <span class="text-sm"><strong class="text-white">Strategic Thinking:</strong> Master problem
+                            solving and time management under pressure.</span>
+                    </li>
+                    <li class="flex items-start text-gray-300">
+                        <span class="text-tertiary mr-3 text-lg leading-tight">&bull;</span>
+                        <span class="text-sm"><strong class="text-white">Communication:</strong> Refine presentation
+                            skills by pitching to expert panels.</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>

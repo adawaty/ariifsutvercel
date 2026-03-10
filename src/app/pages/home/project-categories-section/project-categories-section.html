@@ -1,1 +1,71 @@
-<p>project-categories-section works!</p>
+<section class="py-32 bg-background-dark relative overflow-hidden">
+    <!-- Ambient Glows -->
+    <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vw] bg-tertiary/5 rounded-full blur-[120px] pointer-events-none">
+    </div>
+    <div class="absolute top-0 right-0 w-[40vw] h-64 bg-primary/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Header -->
+        <div #headerSection class="text-center mb-24 space-y-4">
+            <h3 class="text-tertiary font-bold tracking-widest uppercase text-sm md:text-base">Two Pathways</h3>
+            <h2 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight">
+                Project <span
+                    class="bg-clip-text text-transparent bg-linear-to-r from-tertiary to-primary drop-shadow-lg">Categories</span>
+            </h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto font-light">Choose the track that fits your academic
+                journey and showcase your hard work.</p>
+        </div>
+
+        <!-- 2 Massive Cards Split -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
+
+            <!-- Category 1: Course Projects -->
+            <div #categoryCard
+                class="group relative bg-white/5 border border-white/10 p-10 md:p-14 rounded-[3rem] backdrop-blur-xl hover:-translate-y-2 hover:border-primary/50 transition-all duration-700 overflow-hidden text-center flex flex-col items-center">
+                <!-- Hover Glow -->
+                <div
+                    class="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                </div>
+
+                <div
+                    class="w-24 h-24 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center text-primary mb-8 group-hover:scale-110 transition-transform duration-500 shadow-[0_0_30px_rgba(44,140,156,0.2)]">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-3xl md:text-4xl font-black text-white mb-6">Academic <br><span
+                        class="text-primary font-light text-2xl md:text-3xl">Course Projects</span></h3>
+                <p class="text-gray-400 text-lg md:text-xl font-light leading-relaxed max-w-sm">
+                    Refined and polished versions of your semester's best course work.
+                </p>
+            </div>
+
+            <!-- Category 2: Research Projects -->
+            <div #categoryCard
+                class="group relative bg-white/5 border border-white/10 p-10 md:p-14 rounded-[3rem] backdrop-blur-xl hover:-translate-y-2 hover:border-secondary/50 transition-all duration-700 overflow-hidden text-center flex flex-col items-center md:mt-16">
+                <!-- Hover Glow -->
+                <div
+                    class="absolute inset-x-0 top-0 h-1/2 bg-linear-to-b from-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                </div>
+
+                <div
+                    class="w-24 h-24 rounded-full bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary mb-8 group-hover:scale-110 transition-transform duration-500 shadow-[0_0_30px_rgba(204,104,75,0.2)]">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-3xl md:text-4xl font-black text-white mb-6">Independent <br><span
+                        class="text-secondary font-light text-2xl md:text-3xl">Research Projects</span></h3>
+                <p class="text-gray-400 text-lg md:text-xl font-light leading-relaxed max-w-sm">
+                    Independent or mentored research initiatives that drive technical innovation.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>

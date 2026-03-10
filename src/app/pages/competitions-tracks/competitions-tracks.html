@@ -1,1 +1,169 @@
-<p>competitions-tracks works!</p>
+<main class="min-h-screen bg-background-dark pt-32 pb-24 relative overflow-hidden">
+
+    <!-- Subtle Grid Background -->
+    <div
+        class="absolute inset-0 z-0 opacity-20 pointer-events-none bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-size-[60px_60px]">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+        <!-- Header Section -->
+        <div #headerSection class="text-center max-w-3xl mx-auto mb-20 space-y-6">
+            <h3 class="text-primary font-bold tracking-widest uppercase text-sm md:text-base">The Challenge</h3>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                Choose Your <br>
+                <span
+                    class="text-transparent bg-clip-text bg-linear-to-r from-primary via-secondary to-tertiary">Innovation
+                    Arena</span>
+            </h1>
+            <p class="text-xl text-gray-400 font-light max-w-2xl mx-auto">
+                ARIIF provides specialized tracks spanning modern technological challenges. Present your ideas,
+                prototypes, and research where they impact the most.
+            </p>
+        </div>
+
+        <!-- Tracks Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Track 1: Computing -->
+            <div #trackCard class="h-full relative">
+                <article
+                    class="relative group rounded-3xl bg-white/5 border border-white/10 p-8 flex flex-col h-full overflow-hidden backdrop-blur-md hover:-translate-y-2 hover:border-primary/50 transition-all duration-500 shadow-xl">
+                    <div
+                        class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full mix-blend-screen filter blur-[80px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                    </div>
+                    <div class="relative z-10 grow">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center mb-6 text-primary border border-primary/30 shadow-[0_0_15px_rgba(44,140,156,0.3)]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM144,200H112V184h32Zm72,0H160V184a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v16H40V56H216V200Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="text-primary font-bold uppercase tracking-widest text-sm mb-2">Track 01</p>
+                        <h2 class="text-3xl font-bold text-white mb-4">Computing, Networking & Intelligent Systems</h2>
+                        <p class="text-gray-400 mb-8 font-light">
+                            Focusing on software architecture, data processing, and securing future networks against
+                            emerging threats.
+                        </p>
+
+                        <div class="space-y-3">
+                            <div
+                                class="flex items-center space-x-3 bg-white/5 rounded-full px-4 py-2 border border-white/10">
+                                <span
+                                    class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_rgba(44,140,156,0.8)]"></span>
+                                <span class="text-gray-300 text-sm font-medium">Computer Science Technology</span>
+                            </div>
+                            <div
+                                class="flex items-center space-x-3 bg-white/5 rounded-full px-4 py-2 border border-white/10">
+                                <span
+                                    class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_rgba(44,140,156,0.8)]"></span>
+                                <span class="text-gray-300 text-sm font-medium">AI & Data Science</span>
+                            </div>
+                            <div
+                                class="flex items-center space-x-3 bg-white/5 rounded-full px-4 py-2 border border-white/10">
+                                <span
+                                    class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_rgba(44,140,156,0.8)]"></span>
+                                <span class="text-gray-300 text-sm font-medium">Network & Cybersecurity</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Track 2: Electrical & Sustainable -->
+            <div #trackCard class="h-full relative">
+                <article
+                    class="relative group rounded-3xl bg-white/5 border border-white/10 p-8 flex flex-col h-full overflow-hidden backdrop-blur-md hover:-translate-y-2 hover:border-secondary/50 transition-all duration-500 shadow-xl">
+                    <div
+                        class="absolute bottom-0 right-0 w-64 h-64 bg-secondary/20 rounded-full mix-blend-screen filter blur-[80px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                    </div>
+                    <div class="relative z-10 grow">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-secondary/20 flex items-center justify-center mb-6 text-secondary border border-secondary/30 shadow-[0_0_15px_rgba(204,104,75,0.3)]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M245.92,100.86a8,8,0,0,0-5.71-10.78l-43.19-11.57L185.45,35.32a8,8,0,0,0-10.78-5.71l-50,18.18L74.63,29.61A8,8,0,0,0,63.84,35.32L52.27,78.51,9.08,90.08a8,8,0,0,0-5.71,10.78L21.55,150.9,3.37,200.86A8,8,0,0,0,11,211.5l50-18.17,50.05,18.18a8,8,0,0,0,10.78-5.72l11.57-43.19,43.19,11.57a8,8,0,0,0,10.78-5.71l18.18-50L245.92,100.86ZM58,198.81l-42,15.26,15.26-42,16.59-45.62,45.62-16.59,42-15.26-15.26,42L103.62,182.22ZM228.62,110.19l-42,15.26-15.26,42-16.59,45.62L109.15,196.48l15.26-42,45.62-16.59,42-15.26,16.59-45.62Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="text-secondary font-bold uppercase tracking-widest text-sm mb-2">Track 02</p>
+                        <h2 class="text-3xl font-bold text-white mb-4">Electrical, Electronic & Sustainable Engineering
+                        </h2>
+                        <p class="text-gray-400 mb-8 font-light">
+                            Pushing the boundaries of hardware communication protocols and renewable power efficiency.
+                        </p>
+
+                        <div class="space-y-3">
+                            <div
+                                class="flex items-center space-x-3 bg-white/5 rounded-full px-4 py-2 border border-white/10">
+                                <span
+                                    class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_rgba(204,104,75,0.8)]"></span>
+                                <span class="text-gray-300 text-sm font-medium">Communication & Electronic Tech</span>
+                            </div>
+                            <div
+                                class="flex items-center space-x-3 bg-white/5 rounded-full px-4 py-2 border border-white/10">
+                                <span
+                                    class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_rgba(204,104,75,0.8)]"></span>
+                                <span class="text-gray-300 text-sm font-medium">Power & Energy Efficiency</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Track 3: Creative Tech -->
+            <div #trackCard class="h-full relative">
+                <article
+                    class="relative group rounded-3xl bg-white/5 border border-white/10 p-8 flex flex-col h-full overflow-hidden backdrop-blur-md hover:-translate-y-2 hover:border-tertiary/50 transition-all duration-500 shadow-xl">
+                    <div
+                        class="absolute top-1/2 left-0 w-64 h-64 bg-tertiary/20 rounded-full mix-blend-screen filter blur-[80px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none transform -translate-y-1/2">
+                    </div>
+                    <div class="relative z-10 grow">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-tertiary/20 flex items-center justify-center mb-6 text-tertiary border border-tertiary/30 shadow-[0_0_15px_rgba(83,38,108,0.3)]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M232,56V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56Zm-16,0H40V200H216ZM144,168v-4a20,20,0,0,1,20-20h24a8,8,0,0,0,0-16H164A36,36,0,0,0,128,164v4a8,8,0,0,0,16,0Zm-48-28L70.34,114.34a8,8,0,0,0-11.31,11.32l32,32a8,8,0,0,0,11.31,0l32-32a8,8,0,0,0-11.31-11.32Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="text-tertiary font-bold uppercase tracking-widest text-sm mb-2">Track 03</p>
+                        <h2 class="text-3xl font-bold text-white mb-4">Creative Technology & Digital Innovation</h2>
+                        <p class="text-gray-400 mb-8 font-light">
+                            Showcasing the intersection of art and engineering through immersive media, smart products,
+                            and
+                            creative AI tools.
+                        </p>
+
+                        <div class="space-y-3">
+                            <div
+                                class="flex items-center space-x-3 bg-white/5 rounded-full px-4 py-2 border border-white/10">
+                                <span
+                                    class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_rgba(83,38,108,0.8)]"></span>
+                                <span class="text-gray-300 text-sm font-medium">Smart Product Design</span>
+                            </div>
+                            <div
+                                class="flex items-center space-x-3 bg-white/5 rounded-full px-4 py-2 border border-white/10">
+                                <span
+                                    class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_rgba(83,38,108,0.8)]"></span>
+                                <span class="text-gray-300 text-sm font-medium">Digital Media & Creative AI</span>
+                            </div>
+                            <div
+                                class="flex items-center space-x-3 bg-white/5 rounded-full px-4 py-2 border border-white/10">
+                                <span
+                                    class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_rgba(83,38,108,0.8)]"></span>
+                                <span class="text-gray-300 text-sm font-medium">Extended Reality (XR)</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</main>
