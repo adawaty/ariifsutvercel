@@ -1,4 +1,4 @@
-<section class="py-32 bg-background-dark relative overflow-hidden">
+<section #container class="py-32 bg-background-dark relative overflow-hidden">
     <!-- Ambient glowing grid -->
     <div
         class="absolute inset-0 z-0 pointer-events-none bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[60px_60px] opacity-20 mask-[radial-gradient(ellipse_60%_60%_at_50%_50%,#000_10%,transparent_100%)]">
@@ -19,7 +19,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Criterion 1 -->
             <div #criteriaCard
-                class="group relative bg-white/5 border border-white/10 p-8 md:p-10 rounded-3xl backdrop-blur-md hover:-translate-y-2 hover:border-primary/50 transition-all duration-500 overflow-hidden shadow-xl flex items-start gap-6">
+                class="group relative bg-white/5 border border-white/10 p-8 md:p-10 rounded-3xl backdrop-blur-md hover:-translate-y-2 hover:border-primary/50 transition-colors duration-500 overflow-hidden shadow-xl flex items-start gap-6">
                 <!-- Hover Glow -->
                 <div
                     class="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
@@ -38,7 +38,7 @@
 
             <!-- Criterion 2 -->
             <div #criteriaCard
-                class="group relative bg-white/5 border border-white/10 p-8 md:p-10 rounded-3xl backdrop-blur-md hover:-translate-y-2 hover:border-secondary/50 transition-all duration-500 overflow-hidden shadow-xl flex items-start gap-6">
+                class="group relative bg-white/5 border border-white/10 p-8 md:p-10 rounded-3xl backdrop-blur-md hover:-translate-y-2 hover:border-secondary/50 transition-colors duration-500 overflow-hidden shadow-xl flex items-start gap-6">
                 <div
                     class="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-secondary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
                 </div>
@@ -56,7 +56,7 @@
 
             <!-- Criterion 3 -->
             <div #criteriaCard
-                class="group relative bg-white/5 border border-white/10 p-8 md:p-10 rounded-3xl backdrop-blur-md hover:-translate-y-2 hover:border-tertiary/50 transition-all duration-500 overflow-hidden shadow-xl flex items-start gap-6">
+                class="group relative bg-white/5 border border-white/10 p-8 md:p-10 rounded-3xl backdrop-blur-md hover:-translate-y-2 hover:border-tertiary/50 transition-colors duration-500 overflow-hidden shadow-xl flex items-start gap-6">
                 <div
                     class="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-tertiary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
                 </div>
@@ -74,7 +74,7 @@
 
             <!-- Criterion 4 -->
             <div #criteriaCard
-                class="group relative bg-white/5 border border-white/10 p-8 md:p-10 rounded-3xl backdrop-blur-md hover:-translate-y-2 hover:border-primary/50 transition-all duration-500 overflow-hidden shadow-xl flex items-start gap-6">
+                class="group relative bg-white/5 border border-white/10 p-8 md:p-10 rounded-3xl backdrop-blur-md hover:-translate-y-2 hover:border-primary/50 transition-colors duration-500 overflow-hidden shadow-xl flex items-start gap-6">
                 <div
                     class="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
                 </div>
@@ -96,7 +96,7 @@
             class="mt-12 bg-linear-to-r from-primary/20 via-secondary/20 to-tertiary/20 border border-white/20 p-8 rounded-3xl backdrop-blur-xl text-center shadow-[0_0_40px_rgba(255,255,255,0.05)] relative overflow-hidden group">
             <!-- Sparkle effect -->
             <div
-                class="absolute top-0 -left-[100%] w-1/2 h-full bg-linear-to-r from-transparent via-white/20 to-transparent skew-x-[-30deg] group-hover:animate-[shimmer_2s_infinite]">
+                class="absolute top-0 -left-full w-1/2 h-full bg-linear-to-r from-transparent via-white/20 to-transparent skew-x-[-30deg] group-hover:animate-[shimmer_2s_infinite]">
             </div>
 
             <p class="text-xl md:text-2xl font-medium text-white tracking-wide relative z-10">

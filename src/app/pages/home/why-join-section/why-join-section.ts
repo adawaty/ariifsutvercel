@@ -1,7 +1,7 @@
 import { Component, ElementRef, ViewChild, ViewChildren, QueryList, AfterViewInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 @Component({
   selector: 'app-why-join-section',
@@ -13,48 +13,41 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 export class WhyJoinSection implements AfterViewInit, OnDestroy {
   @ViewChild('headerSection') headerSection!: ElementRef<HTMLDivElement>;
   @ViewChildren('featureCard') featureCards!: QueryList<ElementRef<HTMLDivElement>>;
+  @ViewChild('container') container!: ElementRef<HTMLElement>;
 
   private ctx!: gsap.Context;
-
-  constructor(private el: ElementRef) { }
 
   ngAfterViewInit() {
     gsap.registerPlugin(ScrollTrigger);
 
-    setTimeout(() => {
-      this.ctx = gsap.context(() => {
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: this.el.nativeElement,
-            start: 'top 80%',
-            toggleActions: 'play none none reverse'
-          }
-        });
-
-        if (this.headerSection) {
-          tl.from(this.headerSection.nativeElement.children, {
-            y: 30,
-            opacity: 0,
-            duration: 0.8,
-            stagger: 0.2,
-            ease: 'power2.out'
-          });
+    this.ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: this.container.nativeElement,
+          start: 'top 80%',
+          end: 'bottom 20%',
+          toggleActions: 'play reverse play reverse'
         }
-
-        if (this.featureCards && this.featureCards.length > 0) {
-          const cards = this.featureCards.map(c => c.nativeElement);
-          tl.from(cards, {
-            y: 50,
-            opacity: 0,
-            duration: 0.8,
-            stagger: 0.2,
-            ease: 'power3.out'
-          }, "-=0.4");
-        }
-
-        setTimeout(() => ScrollTrigger.refresh(), 200);
       });
-    }, 500);
+
+      const cards = this.featureCards.map(c => c.nativeElement);
+
+      tl.from(this.headerSection.nativeElement.children, {
+        y: 40,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: 'power3.out'
+      })
+        .from(cards, {
+          y: 60,
+          scale: 0.9,
+          opacity: 0,
+          duration: 0.8,
+          stagger: 0.15,
+          ease: 'back.out(1.2)'
+        }, "-=0.4");
+    }, this.container.nativeElement);
   }
 
   ngOnDestroy() {

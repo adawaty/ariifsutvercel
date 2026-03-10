@@ -1,4 +1,4 @@
-<section class="py-32 bg-background-dark relative overflow-hidden">
+<section #container class="py-32 bg-background-dark relative overflow-hidden">
     <!-- Ambient Background -->
     <div
         class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[40px_40px] opacity-30 pointer-events-none">
@@ -19,12 +19,15 @@
         <!-- Vertical Timeline structure -->
         <div class="relative max-w-4xl mx-auto">
             <!-- Center Line (Desktop) -->
-            <div
-                class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-linear-to-b from-primary/30 via-secondary/30 to-tertiary/30 -translate-x-1/2">
+            <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-white/10 -translate-x-1/2"></div>
+            <div #timelineLine
+                class="hidden md:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-linear-to-b from-primary via-secondary to-tertiary -translate-x-1/2 shadow-[0_0_15px_rgba(44,140,156,0.8)] origin-top scale-y-0">
             </div>
+
             <!-- Left Line (Mobile) -->
-            <div
-                class="block md:hidden absolute left-8 top-0 bottom-0 w-px bg-linear-to-b from-primary/30 via-secondary/30 to-tertiary/30">
+            <div class="block md:hidden absolute left-8 top-0 bottom-0 w-px bg-white/10"></div>
+            <div #timelineLineMobile
+                class="block md:hidden absolute left-8 top-0 bottom-0 w-[2px] bg-linear-to-b from-primary via-secondary to-tertiary shadow-[0_0_15px_rgba(44,140,156,0.8)] origin-top scale-y-0">
             </div>
 
             <div class="space-y-12">
@@ -40,7 +43,7 @@
                     </div>
                     <!-- Node -->
                     <div
-                        class="absolute left-8 md:left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-background-dark border-4 border-primary z-10 shadow-[0_0_15px_rgba(44,140,156,0.5)] group-hover:scale-150 transition-transform duration-300">
+                        class="absolute left-8 md:left-1/2 -ml-3 w-6 h-6 rounded-full bg-background-dark border-4 border-primary z-10 shadow-[0_0_15px_rgba(44,140,156,0.5)] group-hover:scale-150 transition-transform duration-300">
                     </div>
                     <!-- Content (Right on Desktop) -->
                     <div class="order-3 md:w-5/12 pl-20 md:pl-12 w-full relative">
@@ -62,7 +65,7 @@
                             March, 2026</span>
                     </div>
                     <div
-                        class="absolute left-8 md:left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-background-dark border-4 border-secondary z-10 shadow-[0_0_15px_rgba(204,104,75,0.5)] group-hover:scale-150 transition-transform duration-300">
+                        class="absolute left-8 md:left-1/2 -ml-3 w-6 h-6 rounded-full bg-background-dark border-4 border-secondary z-10 shadow-[0_0_15px_rgba(204,104,75,0.5)] group-hover:scale-150 transition-transform duration-300">
                     </div>
                     <div class="order-3 md:w-5/12 pl-20 md:pl-0 md:pr-12 w-full relative">
                         <div
@@ -83,7 +86,7 @@
                             March, 2026</span>
                     </div>
                     <div
-                        class="absolute left-8 md:left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-background-dark border-4 border-tertiary z-10 shadow-[0_0_15px_rgba(83,38,108,0.5)] group-hover:scale-150 transition-transform duration-300">
+                        class="absolute left-8 md:left-1/2 -ml-3 w-6 h-6 rounded-full bg-background-dark border-4 border-tertiary z-10 shadow-[0_0_15px_rgba(83,38,108,0.5)] group-hover:scale-150 transition-transform duration-300">
                     </div>
                     <div class="order-3 md:w-5/12 pl-20 md:pl-12 w-full relative">
                         <div
@@ -104,7 +107,7 @@
                             April, 2026</span>
                     </div>
                     <div
-                        class="absolute left-8 md:left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-background-dark border-4 border-primary z-10 shadow-[0_0_15px_rgba(44,140,156,0.5)] group-hover:scale-150 transition-transform duration-300">
+                        class="absolute left-8 md:left-1/2 -ml-3 w-6 h-6 rounded-full bg-background-dark border-4 border-primary z-10 shadow-[0_0_15px_rgba(44,140,156,0.5)] group-hover:scale-150 transition-transform duration-300">
                     </div>
                     <div class="order-3 md:w-5/12 pl-20 md:pl-0 md:pr-12 w-full relative">
                         <div
@@ -125,7 +128,7 @@
                             of 19 April</span>
                     </div>
                     <div
-                        class="absolute left-8 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-background-dark border-4 border-secondary z-10 shadow-[0_0_25px_rgba(204,104,75,0.8)] animate-pulse">
+                        class="absolute left-8 md:left-1/2 -ml-4 w-8 h-8 rounded-full bg-background-dark border-4 border-secondary z-10 shadow-[0_0_25px_rgba(204,104,75,0.8)] animate-pulse">
                     </div>
                     <div class="order-3 md:w-5/12 pl-20 md:pl-12 w-full relative">
                         <div
