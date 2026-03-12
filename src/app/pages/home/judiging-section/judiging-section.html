@@ -1,0 +1,108 @@
+<section #container class="py-32 bg-background-dark relative overflow-hidden">
+    <!-- Ambient glowing grid -->
+    <div
+        class="absolute inset-0 z-0 pointer-events-none bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[60px_60px] opacity-20 mask-[radial-gradient(ellipse_60%_60%_at_50%_50%,#000_10%,transparent_100%)]">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Header -->
+        <div #headerSection class="text-center mb-20 space-y-4">
+            <h3 class="text-secondary font-bold tracking-widest uppercase text-sm md:text-base">Evaluation Metrics</h3>
+            <h2 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight">
+                Judging <span
+                    class="bg-clip-text text-transparent bg-linear-to-r from-secondary to-primary drop-shadow-lg">Criteria</span>
+            </h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto font-light">How top-tier industry experts and academic
+                professors will evaluate your project.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Criterion 1 -->
+            <div #criteriaCard
+                class="group relative bg-white/5 border border-white/10 p-8 md:p-10 rounded-3xl backdrop-blur-md hover:-translate-y-2 hover:border-primary/50 transition-colors duration-500 overflow-hidden shadow-xl flex items-start gap-6">
+                <!-- Hover Glow -->
+                <div
+                    class="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                </div>
+
+                <div
+                    class="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center text-primary shrink-0 border border-primary/30 shadow-[0_0_15px_rgba(44,140,156,0.3)] group-hover:scale-110 transition-transform duration-500">
+                    <span class="text-2xl font-black">01</span>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-bold text-white mb-3 tracking-wide">Innovation & Creativity</h4>
+                    <p class="text-gray-400 font-light leading-relaxed text-sm md:text-base">The originality of the idea
+                        and the uniqueness of the proposed solution.</p>
+                </div>
+            </div>
+
+            <!-- Criterion 2 -->
+            <div #criteriaCard
+                class="group relative bg-white/5 border border-white/10 p-8 md:p-10 rounded-3xl backdrop-blur-md hover:-translate-y-2 hover:border-secondary/50 transition-colors duration-500 overflow-hidden shadow-xl flex items-start gap-6">
+                <div
+                    class="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-secondary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                </div>
+
+                <div
+                    class="w-16 h-16 rounded-2xl bg-secondary/20 flex items-center justify-center text-secondary shrink-0 border border-secondary/30 shadow-[0_0_15px_rgba(204,104,75,0.3)] group-hover:scale-110 transition-transform duration-500">
+                    <span class="text-2xl font-black">02</span>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-bold text-white mb-3 tracking-wide">Practical & Industrial Impact</h4>
+                    <p class="text-gray-400 font-light leading-relaxed text-sm md:text-base">The potential for
+                        real-world application and the project's ability to solve specific industry challenges.</p>
+                </div>
+            </div>
+
+            <!-- Criterion 3 -->
+            <div #criteriaCard
+                class="group relative bg-white/5 border border-white/10 p-8 md:p-10 rounded-3xl backdrop-blur-md hover:-translate-y-2 hover:border-tertiary/50 transition-colors duration-500 overflow-hidden shadow-xl flex items-start gap-6">
+                <div
+                    class="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-tertiary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                </div>
+
+                <div
+                    class="w-16 h-16 rounded-2xl bg-tertiary/20 flex items-center justify-center text-tertiary shrink-0 border border-tertiary/30 shadow-[0_0_15px_rgba(83,38,108,0.3)] group-hover:scale-110 transition-transform duration-500">
+                    <span class="text-2xl font-black">03</span>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-bold text-white mb-3 tracking-wide">Quality & Implementation</h4>
+                    <p class="text-gray-400 font-light leading-relaxed text-sm md:text-base">The rigor of the
+                        methodology, the stability of the Prototype, and the depth of the Technical Document.</p>
+                </div>
+            </div>
+
+            <!-- Criterion 4 -->
+            <div #criteriaCard
+                class="group relative bg-white/5 border border-white/10 p-8 md:p-10 rounded-3xl backdrop-blur-md hover:-translate-y-2 hover:border-primary/50 transition-colors duration-500 overflow-hidden shadow-xl flex items-start gap-6">
+                <div
+                    class="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                </div>
+
+                <div
+                    class="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center text-primary shrink-0 border border-primary/30 shadow-[0_0_15px_rgba(44,140,156,0.3)] group-hover:scale-110 transition-transform duration-500">
+                    <span class="text-2xl font-black">04</span>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-bold text-white mb-3 tracking-wide">Communication Skills</h4>
+                    <p class="text-gray-400 font-light leading-relaxed text-sm md:text-base">The clarity of the Project
+                        Video, visual quality of the Poster, and the team's ability to engage with the jury.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Highlight Banner -->
+        <div #highlightBanner
+            class="mt-12 bg-linear-to-r from-primary/20 via-secondary/20 to-tertiary/20 border border-white/20 p-8 rounded-3xl backdrop-blur-xl text-center shadow-[0_0_40px_rgba(255,255,255,0.05)] relative overflow-hidden group">
+            <!-- Sparkle effect -->
+            <div
+                class="absolute top-0 -left-full w-1/2 h-full bg-linear-to-r from-transparent via-white/20 to-transparent skew-x-[-30deg] group-hover:animate-[shimmer_2s_infinite]">
+            </div>
+
+            <p class="text-xl md:text-2xl font-medium text-white tracking-wide relative z-10">
+                ⭐ <span class="text-transparent bg-clip-text bg-linear-to-r from-white to-gray-400">Focus on projects
+                    that solve real problems</span>, are feasible, and clearly presented.
+            </p>
+        </div>
+    </div>
+</section>

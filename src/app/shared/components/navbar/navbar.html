@@ -1,0 +1,112 @@
+<nav class="fixed w-full top-0 z-50 transition-all duration-300" [ngClass]="{
+    'bg-background-dark shadow-lg shadow-black/50 py-3': isScrolled || isMenuOpen,
+    'bg-transparent py-5': !isScrolled && !isMenuOpen,
+    'backdrop-blur-md bg-background-dark/80': isScrolled && !isMenuOpen
+  }">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+
+            <!-- Logo Container -->
+            <div class="shrink-0 flex items-center cursor-pointer" routerLink="/home" (click)="closeMenu()">
+                <img class="h-16 md:h-20 w-auto object-contain drop-shadow-[0_0_10px_rgba(44,140,156,0.5)] transition-transform duration-300 hover:scale-105"
+                    src="/ARIIF_LOGO.png" alt="ARIIF Logo" />
+                <span class="ml-3 font-bold text-2xl text-white tracking-widest uppercase hidden sm:block">
+                    ARIIF <span class="text-primary">2026</span>
+                </span>
+            </div>
+
+            <!-- Desktop Menu Links -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a routerLink="/home" routerLinkActive="text-primary scale-105 after:w-full"
+                    [routerLinkActiveOptions]="{exact: true}" class="text-gray-200 hover:text-white transition-all duration-300 font-medium text-sm tracking-wide relative
+                  after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-primary
+                  after:transition-all after:duration-300 hover:after:w-full">
+                    Home
+                </a>
+                <a routerLink="/about-us" routerLinkActive="text-primary scale-105 after:w-full" class="text-gray-200 hover:text-white transition-all duration-300 font-medium text-sm tracking-wide relative
+                  after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-primary
+                  after:transition-all after:duration-300 hover:after:w-full">
+                    About ARIIF
+                </a>
+                <a routerLink="/competitions-tracks" routerLinkActive="text-primary scale-105 after:w-full" class="text-gray-200 hover:text-white transition-all duration-300 font-medium text-sm tracking-wide relative
+                  after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-primary
+                  after:transition-all after:duration-300 hover:after:w-full">
+                    Competition Tracks
+                </a>
+                <a routerLink="/guidelines" routerLinkActive="text-primary scale-105 after:w-full" class="text-gray-200 hover:text-white transition-all duration-300 font-medium text-sm tracking-wide relative
+                  after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-primary
+                  after:transition-all after:duration-300 hover:after:w-full">
+                    Guidelines
+                </a>
+
+                <!-- Call to Action Button -->
+                <a routerLink="/submission"
+                    class="px-5 py-2.5 rounded-full bg-linear-to-r from-tertiary to-primary 
+                  text-white font-semibold text-sm shadow-[0_4px_15px_rgba(44,140,156,0.3)]
+                  hover:shadow-[0_6px_20px_rgba(44,140,156,0.5)] transform hover:-translate-y-0.5 transition-all duration-300">
+                    Submission
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="flex items-center md:hidden">
+                <button (click)="toggleMenu()"
+                    class="inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-white hover:bg-white/10 focus:outline-none transition-colors duration-200"
+                    aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Hamburger Icon (Menu Closed) -->
+                    <svg [class.hidden]="isMenuOpen" [class.block]="!isMenuOpen" class="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <!-- X Icon (Menu Open) -->
+                    <svg [class.block]="isMenuOpen" [class.hidden]="!isMenuOpen" class="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Panel -->
+    <div class="md:hidden overflow-hidden transition-all duration-300 ease-in-out border-t border-white/10" [ngClass]="{
+      'max-h-96 opacity-100 py-2': isMenuOpen,
+      'max-h-0 opacity-0 py-0 border-transparent': !isMenuOpen
+    }">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center bg-background-dark">
+            <a routerLink="/home" routerLinkActive="bg-primary/20 text-primary border-l-4 border-primary"
+                [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()"
+                class="text-gray-300 hover:text-white hover:bg-white/5 block px-3 py-3 rounded-md text-base font-medium w-full text-center transition-colors">
+                Home
+            </a>
+            <a routerLink="/about-us" routerLinkActive="bg-primary/20 text-primary border-l-4 border-primary"
+                (click)="closeMenu()"
+                class="text-gray-300 hover:text-white hover:bg-white/5 block px-3 py-3 rounded-md text-base font-medium w-full text-center transition-colors">
+                About ARIIF
+            </a>
+            <a routerLink="/competitions-tracks" routerLinkActive="bg-primary/20 text-primary border-l-4 border-primary"
+                (click)="closeMenu()"
+                class="text-gray-300 hover:text-white hover:bg-white/5 block px-3 py-3 rounded-md text-base font-medium w-full text-center transition-colors">
+                Competition Tracks
+            </a>
+            <a routerLink="/guidelines" routerLinkActive="bg-primary/20 text-primary border-l-4 border-primary"
+                (click)="closeMenu()"
+                class="text-gray-300 hover:text-white hover:bg-white/5 block px-3 py-3 rounded-md text-base font-medium w-full text-center transition-colors">
+                Guidelines
+            </a>
+
+            <div class="pt-4 pb-2 w-full px-4 text-center">
+                <a routerLink="/submission" (click)="closeMenu()" class="block w-full px-5 py-3 rounded-full bg-linear-to-r from-tertiary to-primary 
+                   text-white font-bold text-base shadow-[0_4px_15px_rgba(44,140,156,0.3)]
+                   active:scale-95 transition-all">
+                    Submit Project Now
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>

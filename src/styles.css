@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #2c8c9c;
+  --color-secondary: #cc684b;
+  --color-tertiary: #53266c;
+  --color-background-dark: #0a1112;
+}
+
+body {
+  background-color: var(--color-background-dark);
+  color: #e5e7eb;
+  /* tailwind gray-200 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom 3D Utilities for Hero Section */
+@utility transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+@utility translate-z-10 {
+  transform: translateZ(10px);
+}
+
+@utility translate-z-20 {
+  transform: translateZ(20px);
+}

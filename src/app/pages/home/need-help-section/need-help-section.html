@@ -1,0 +1,56 @@
+<section #container class="pt-24 pb-8 bg-background-dark relative overflow-hidden">
+    <!-- Ambient Glow -->
+    <div
+        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-1/2 bg-linear-to-t from-primary/10 to-transparent pointer-events-none">
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div #helpContent
+            class="bg-white/5 border border-white/10 p-10 md:p-16 rounded-[3rem] backdrop-blur-xl shadow-2xl relative overflow-hidden group">
+            <!-- Animated Background Gradient -->
+            <div
+                class="absolute inset-0 bg-linear-to-br from-primary/20 via-transparent to-tertiary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+            </div>
+
+            <div
+                class="relative z-10 w-20 h-20 rounded-full bg-white/10 flex items-center justify-center text-white mx-auto mb-8 border border-white/20 shadow-[0_0_20px_rgba(255,255,255,0.05)] group-hover:scale-110 group-hover:bg-primary/20 group-hover:border-primary/50 group-hover:text-primary transition-all duration-500">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                    </path>
+                </svg>
+            </div>
+
+            <h2 class="relative z-10 text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-4">Need <span
+                    class="bg-clip-text text-transparent bg-linear-to-r from-primary to-secondary drop-shadow-md">Help?</span>
+            </h2>
+            <p class="relative z-10 text-lg text-gray-400 font-light mb-10 max-w-xl mx-auto">
+                Got questions about the timeline, categories, or submission process? Our dedicated support team is ready
+                to assist you.
+            </p>
+
+            <a href="mailto:ARIIF@sut.edu.eg"
+                class="relative z-10 inline-flex items-center gap-4 bg-linear-to-r from-primary to-secondary px-8 py-4 rounded-full text-white font-bold text-lg hover:-translate-y-1 shadow-[0_0_20px_rgba(44,140,156,0.4)] hover:shadow-[0_0_40px_rgba(44,140,156,0.6)] transition-colors duration-300 overflow-hidden">
+                <span>Email ARIIF Support</span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                    </path>
+                </svg>
+            </a>
+
+            <!-- Sponsor/Partner Logo Area -->
+            <div class="mt-12 pt-8 border-t border-white/10 flex flex-col items-center gap-4 relative z-10">
+                <span class="text-xs text-gray-500 uppercase tracking-[0.2em] font-semibold flex items-center gap-3">
+                    <span class="w-8 h-px bg-gray-600/50"></span>
+                    Supported By
+                    <span class="w-8 h-px bg-gray-600/50"></span>
+                </span>
+                <div
+                    class="bg-white/5 backdrop-blur-md rounded-2xl px-8 py-4 shadow-[0_8px_32px_rgba(0,0,0,0.2)] border border-white/10 cursor-default hover:bg-white/10 hover:shadow-[0_8px_32px_rgba(255,255,255,0.05)] transition-all duration-500 group">
+                    <img src="elswedy_logo.png" alt="Elswedy"
+                        class="h-10 md:h-12 w-auto object-contain group-hover:scale-105 group-hover:brightness-110 transition-all duration-500" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

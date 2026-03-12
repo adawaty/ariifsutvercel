@@ -1,0 +1,117 @@
+<section #aboutContainer class="relative w-full py-24 bg-background-dark overflow-hidden" id="about-us">
+
+    <!-- Subtle Grid Background -->
+    <div
+        class="absolute inset-0 z-0 opacity-20 pointer-events-none bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-size-[60px_60px]">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+        <!-- Header Section -->
+        <div #headerSection class="text-center max-w-3xl mx-auto mb-16 space-y-6">
+            <h3 class="text-primary font-bold tracking-widest uppercase text-sm md:text-base">About ARIIF</h3>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
+                Who We Are & <span class="text-transparent bg-clip-text bg-linear-to-r from-secondary to-tertiary">Our
+                    Mission</span>
+            </h2>
+            <p class="text-xl text-gray-400 leading-relaxed font-light">
+                The Applied Research Innovation & Industrial Forum aims to bridge the gap between academic learning and
+                industry-aligned research by showcasing scalable prototypes and encouraging technological advancements
+                among young innovators.
+            </p>
+        </div>
+
+        <!-- Bento Grid Layout -->
+        <div #bentoGrid class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[minmax(180px,auto)]">
+
+            <!-- Big Objective Card (Spans 2 columns on lg) -->
+            <div
+                class="lg:col-span-2 relative group rounded-3xl bg-white/5 border border-white/10 p-8 md:p-10 overflow-hidden backdrop-blur-md hover:border-primary/50 transition-colors duration-500 shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+                <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full mix-blend-screen filter blur-[80px] opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                </div>
+                <div class="relative z-10 h-full flex flex-col justify-center">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center mb-6 text-primary border border-primary/30">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160h-8V104a8,8,0,0,0-8-8H56a8,8,0,0,0-8,8V200H40V56h8V80a8,8,0,0,0,8,8h32a8,8,0,0,0,8-8V56h64V128a8,8,0,0,0,8,8h32a8,8,0,0,0,8-8V56h8Zm-24,0H168V120h24ZM96,72H64V56H96Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Bridging the Gap</h3>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        We are dedicated to fostering collaboration between students and top industry professionals. Our
+                        objective is to guide graduation projects away from theoretical exercises into fully functional,
+                        scalable industrial solutions.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Principle 1: Innovation Cards -->
+            <div
+                class="relative group rounded-3xl bg-white/5 border border-white/10 p-8 overflow-hidden backdrop-blur-md hover:border-secondary/50 transition-colors duration-500">
+                <div
+                    class="absolute bottom-0 right-0 w-40 h-40 bg-secondary/20 rounded-full mix-blend-screen filter blur-[60px] opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                </div>
+                <div class="relative z-10 flex flex-col h-full justify-between">
+                    <div
+                        class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center mb-6 text-secondary border border-secondary/30">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M176.6,176.6a8.1,8.1,0,0,1-11.3,0L135.8,147c-2.4-2.5-4.4-4-5.8-5.7v34.1a8,8,0,0,1-16,0V141.3c-1.4,1.7-3.4,3.2-5.8,5.7L78.7,176.6a8.1,8.1,0,0,1-11.4-11.3L101,131.6c2.5-2.4,4-4.4,5.7-5.8H72.6a8,8,0,0,1,0-16h34.1c-1.7-1.4-3.2-3.4-5.7-5.8L67.3,69.7A8.1,8.1,0,0,1,78.7,58.3l33.7,33.7c2.4,2.5,4.4,4,5.8,5.7V63.6a8,8,0,0,1,16,0v34.1c1.4-1.7,3.4-3.2,5.8-5.7l33.7-33.7a8.1,8.1,0,0,1,11.4,11.3L151,109.8c-2.5,2.4-4,4.4-5.7,5.8h34.1a8,8,0,0,1,0,16H145.3c1.7,1.4,3.2,3.4,5.7,5.8l33.7,33.7A8.1,8.1,0,0,1,176.6,176.6ZM244.3,101.4l-42-23.7,10.1-47.5a8,8,0,0,0-9.6-9.5l-47.5,10-23.7-42A8.1,8.1,0,0,0,124.6,8L100.9,50l-47.5-10a8,8,0,0,0-9.6,9.5L53.9,97l-42,23.7a8.1,8.1,0,0,0,0,14L53.9,158.4l-10.1,47.5a8,8,0,0,0,9.6,9.5l47.5-10,23.7,42a8.1,8.1,0,0,0,14,0l23.7-42,47.5,10a8,8,0,0,0,9.6-9.5l-10-47.5,42-23.7A8.1,8.1,0,0,0,244.3,101.4ZM223.5,133.2,189.6,152.4a8,8,0,0,0-3.3,4c-1.1,2.5-1.1,5.3,0,9.3l12,56.5L141.8,206a8,8,0,0,0-4,3.4c-2.5,1.1-5.3,1.1-9.3,0l-56.5-12-16.2,56.5-19.2-33.9a8,8,0,0,0-4-3.3c-2.5-1.1-5.3-1.1-9.3,0l-56.5,12,12-56.5a8,8,0,0,0-3.4-4c-1.1-2.5-1.1-5.3,0-9.3l-56.5-12,56.5-16.2,33.9-19.2a8,8,0,0,0,3.3-4c1.1-2.5,1.1-5.3,0-9.3L66.7,50.3l56.5,12a8,8,0,0,0,4-3.4c2.5-1.1,5.3-1.1,9.3,0l56.5,12,16.2-56.5,19.2,33.9a8,8,0,0,0,4,3.3c2.5,1.1,5.3,1.1,9.3,0l56.5-12-12,56.5a8,8,0,0,0,3.4,4c1.1,2.5,1.1,5.3,0,9.3l56.5,12Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">Technological Impact</h4>
+                        <p class="text-gray-400 text-sm">Focusing on applied research that actively solves industrial
+                            challenges through innovative prototypes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Principle 2: Academic Excellence -->
+            <div
+                class="md:col-span-2 lg:col-span-1 relative group rounded-3xl bg-white/5 border border-white/10 p-8 overflow-hidden backdrop-blur-md hover:border-tertiary/50 transition-colors duration-500">
+                <div
+                    class="absolute bottom-0 left-0 w-44 h-44 bg-tertiary/20 rounded-full mix-blend-screen filter blur-[60px] opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                </div>
+                <div class="relative z-10 flex flex-col h-full justify-between">
+                    <div
+                        class="w-12 h-12 rounded-full bg-tertiary/20 flex items-center justify-center mb-6 text-tertiary border border-tertiary/30">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM152,56V96H104V56ZM88,56v88H40V56ZM168,56H216v88H168ZM40,200V160H216v40Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">Academic Excellence</h4>
+                        <p class="text-gray-400 text-sm">Elevating the standard of university projects to meet
+                            real-market engineering demands.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to action block (Spans 2 columns on lg) -->
+            <div
+                class="md:col-span-2 relative group rounded-3xl bg-linear-to-r from-primary/10 to-secondary/10 border border-white/10 p-8 md:p-10 overflow-hidden backdrop-blur-md hover:border-white/30 transition-colors duration-500 shadow-[0_4px_30px_rgba(0,0,0,0.1)] flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Ready to showcase your talent?</h3>
+                    <p class="text-gray-400 text-lg">Join dozens of engineering teams taking their projects to the next
+                        level.</p>
+                </div>
+                <a routerLink="/guidelines"
+                    class="shrink-0 px-8 py-4 rounded-full bg-white/10 text-white font-bold text-lg border border-white/20 hover:bg-white text-center hover:text-background-dark transition-all duration-300 w-full md:w-auto">
+                    Read Guidelines
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
