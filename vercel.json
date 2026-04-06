@@ -1,8 +1,5 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist/ariif/browser",
-  "framework": "angular",
-  "env": {
-    "ENABLE_FILE_SYSTEM_API": "1"
-  }
+  "outputDirectory": "dist/ARIIF/browser",
+  "framework": "angular"
 }
