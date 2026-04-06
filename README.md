@@ -36,26 +36,6 @@ ng build
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Deploying to Vercel
-
-This repo is configured to deploy as a **static Angular SPA** on Vercel.
-
-- **Build Command:** `npm run build`
-- **Output Directory:** `dist/ARIIF/browser`
-- **SPA routing:** handled via `vercel.json` rewrite to `/index.html`
-
-### Steps
-
-1. Push the repo to GitHub/GitLab/Bitbucket.
-2. In Vercel: **New Project** → import the repo.
-3. Vercel should auto-detect the settings from `vercel.json`. If it asks:
-   - Framework Preset: **Other**
-   - Build Command: `npm run build`
-   - Output Directory: `dist/ARIIF/browser`
-4. Deploy.
-
-> If you deploy under a sub-path (not the domain root), you may need to set Angular `baseHref` accordingly.
-
 ## Running unit tests
 
 To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
